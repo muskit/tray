@@ -30,6 +30,7 @@ struct tray {
 struct tray_menu_item {
   const char *text;
   int disabled;
+  int checkable;
   int checked;
   void (*cb)(struct tray_menu_item *);
   struct tray_menu_item *submenu;
